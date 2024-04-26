@@ -1,0 +1,47 @@
+#8 led on/off
+import RPi.GPIO as GPIO
+import time
+GPIO.Setmode(GPIO.BCM)
+GPIO.Setwornings(False)
+time.sleep(1)
+l1=14
+l2=15
+l3=18
+l4=23
+l5=24
+l6=25
+l7=08
+l8=07
+GPIO.Setup(l1,GPIO.OUT)
+GPIO.Setup(l2,GPIO.OUT)
+GPIO.Setup(l3,GPIO.OUT)
+GPIO.Setup(l4,GPIO.OUT)
+GPIO.Setup(l5,GPIO.OUT)
+GPIO.Setup(l6,GPIO.OUT)
+GPIO.Setup(l7,GPIO.OUT)
+GPIO.Setup(l8,GPIO.OUT)
+time.sleep(1)
+GPIO.Output(l1,True)
+GPIO.Output(l2,True)
+time.sleep(0.5)
+GPIO.Output(l1,False)
+GPIO.Output(l2,False)
+time.sleep(0.5)
+GPIO.Output(l3,True)
+GPIO.Output(l4,True)
+time.sleep(0.5)
+GPIO.Output(l3,False)
+GPIO.Output(l4,False)
+time.sleep(0.5)
+GPIO.Output(l5,True)
+GPIO.Output(l6,True)
+time.sleep(0.5)
+GPIO.Output(l5,False)
+GPIO.Output(l6,False)
+time.sleep(0.5)
+GPIO.Output(l7,True)
+GPIO.Output(l8,True)
+time.sleep(0.5)
+GPIO.Output(l7,False)
+GPIO.Output(l8,False)
+time.sleep(0.5)
